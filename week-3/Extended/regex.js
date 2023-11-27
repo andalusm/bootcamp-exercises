@@ -55,32 +55,56 @@
 
 // Exercise 2
 
-let regexArr = [/a/, /b/, /^d/, /e$/]
-const str = "Bike"
-const str1 = "the room is on fire"
-const str2 = "Fergalicious"
-const str3 = "Fox in sheep clothing"
-const searchMatchingRegex = function (str) {
-    /**
-     * should return true if one match is found with the array
-     */
-    for (const reg of regexArr) {
-        const result = str.match(reg)
-        if (!(result === null)) {
-            return true
-        }
+// let regexArr = [/a/, /b/, /^d/, /e$/]
+// const str = "Bike"
+// const str1 = "the room is on fire"
+// const str2 = "Fergalicious"
+// const str3 = "Fox in sheep clothing"
+// const searchMatchingRegex = function (str) {
+//     /**
+//      * should return true if one match is found with the array
+//      */
+//     for (const reg of regexArr) {
+//         const result = str.match(reg)
+//         if (!(result === null)) {
+//             return true
+//         }
 
-    }
-    return false
+//     }
+//     return false
+// }
+
+// console.log(searchMatchingRegex(str)) //return true (contains b)
+// console.log(searchMatchingRegex(str1)) //return true (ends with e)
+// console.log(searchMatchingRegex(str2)) //return true (contains a)
+// console.log(searchMatchingRegex(str3)) //return false
+
+// regexArr = [/at/, /a/, /a$/, /^b/]
+
+// console.log(searchMatchingRegex('cat')) //will return true
+// console.log(searchMatchingRegex('bike')) //will return true
+// console.log(searchMatchingRegex('mouse')) //will return false 
+
+//Exercise 3
+
+
+const email1 = "cat@meow.com"
+const email2 = "bad1npuT!@gmail.com"
+const email3 = "meow@gmail.net"
+
+const emailValidator = function (str) {
+    /**
+     * returns true if email prefix and domain is made strictly out of letters , the email must end in .com
+     * HINT : doesnt have to be a big regex expression use the methods from RegExp
+     */
+    const pattern = /^.+@.+\.com$/
+    const result = pattern.test(str)
+    return result
+
+
 }
 
-console.log(searchMatchingRegex(str)) //return true (contains b)
-console.log(searchMatchingRegex(str1)) //return true (ends with e)
-console.log(searchMatchingRegex(str2)) //return true (contains a)
-console.log(searchMatchingRegex(str3)) //return false
+console.log(emailValidator(email1)) //return true
+console.log(emailValidator(email2)) //return true
+console.log(emailValidator(email3)) //return false
 
-regexArr = [/at/,/a/,/a$/,/^b/]
-
-console.log(searchMatchingRegex('cat')) //will return true
-console.log(searchMatchingRegex('bike')) //will return true
-console.log(searchMatchingRegex('mouse')) //will return false 
