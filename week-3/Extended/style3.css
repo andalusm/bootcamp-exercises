@@ -1,0 +1,32 @@
+#page{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    background-color: cadetblue;
+}
+
+.footer{
+    background-color:cadetblue;
+}
+.body{
+    display: flex;
+    align-content: space-around;
+    
+}
+
+.menu{
+    padding: 20px;
+
+    background-color: palevioletred;
+}
+
+.content{
+    padding: 20px;
+    background-color: pink;
+}
+.ads{
+    padding: 20px;
+    background-color: palevioletred;
+}
