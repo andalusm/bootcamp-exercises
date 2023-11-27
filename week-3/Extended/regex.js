@@ -97,7 +97,7 @@ const emailValidator = function (str) {
      * returns true if email prefix and domain is made strictly out of letters , the email must end in .com
      * HINT : doesnt have to be a big regex expression use the methods from RegExp
      */
-    const pattern = /^.+@.+\.com$/
+    const pattern = /^\w+@\w+\.com$/
     const result = pattern.test(str)
     return result
 
@@ -107,4 +107,24 @@ const emailValidator = function (str) {
 console.log(emailValidator(email1)) //return true
 console.log(emailValidator(email2)) //return true
 console.log(emailValidator(email3)) //return false
+
+// Exercise 4
+
+const firstURL = "www.workingurl.com"
+const secondURL = "iamabadurl.com"
+const thirdURL = "www.doireallywork.net"
+
+const urlValidator = function (str) {
+    /**
+     * returns true if URL starts with www. , the URL must end in .com
+     * HINT : doesnt have to be a big regex expression use the methods from RegExp
+     */
+    const pattern = /^www\.\w+\.com$/
+    const result = pattern.test(str)
+    return result
+}
+
+console.log(urlValidator(firstURL)) //return true
+console.log(urlValidator(secondURL)) //return false
+console.log(urlValidator(thirdURL)) //return false
 
