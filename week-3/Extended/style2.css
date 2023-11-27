@@ -1,0 +1,19 @@
+body{
+    background-image: url(https://www.irishnews.com/picturesarchive/irishnews/irishnews/2019/03/19/192154347-3dff2bb5-3e21-4d36-8908-abb88418d874.jpg);
+
+}
+
+.see-through {
+    width: 200px;
+    background-color:  rgba(22, 172, 22,0.3);
+    color:  rgba(255, 255, 255, 0.3);
+    height: 100px;
+
+}
+
+.solid{
+    width: 200px;
+    background-color:  rgba(22, 172, 22, 1);
+    color:  rgba(255, 255, 255, 1);
+    height: 100px;
+}
