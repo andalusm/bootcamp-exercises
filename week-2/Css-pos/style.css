@@ -1,0 +1,170 @@
+/* .parent{
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+#child1{
+    position: absolute;
+    background-color: red;
+    top: 50px;
+    height: 20px;
+    width: 300px;
+}
+#child2{
+    position: absolute;
+    background-color: red;
+  height: 300px;
+  width: 20px;
+  left: 50px;
+} */
+.graph{
+    background-color:darkorchid;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    border-radius: 10px;
+}
+#money{
+    position: absolute;
+    left: 5px;
+}
+
+
+.plot{
+    background-color: lightgray;
+    width: 20px;
+    position: absolute;
+}
+#plot1{
+    bottom: 5px;
+    left: 5px;
+    height: 20px;
+}
+#plot2{
+    bottom: 5px;
+    left: 30px;
+    height: 60px;
+}
+#plot3{
+    bottom: 5px;
+    left: 60px;
+    height: 80px;
+}
+#plot4{
+    bottom: 5px;
+    left: 90px;
+    height: 70px;
+}
+#plot5{
+    bottom: 5px;
+    left: 130px;
+    height: 65px;
+}
+#plot6{
+    bottom: 5px;
+    left: 160px;
+    height: 30px;
+}
+#time{
+    position: absolute;
+    bottom: 5px;
+    left: 190px;
+
+}
+
+#part{
+
+    width: 200px;
+    height: 200px;
+    position: relative;
+
+}
+#red{
+    background-color: red;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top:50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+}
+
+.gray{
+    background-color: lightgray;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+    z-index: 1;
+}
+#grey1{
+background-color: lightgray;
+width: 50px;
+height: 50px;
+
+}
+#grey2{
+    background-color: lightgray;
+    width: 50px;
+    height: 50px;
+    right: 0;
+}
+#white{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 5;
+    left: 50px;
+    top: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.bar{
+    background-color: black;
+    width: 450px;
+    height: 250px;
+    display: inline-block;
+}
+
+.chocolate{
+    background-color: #66320E;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+}
+#piece2{
+    left: 120px;
+}
+#piece3{
+    left: 230px;
+}
+#piece4{
+    left: 340px;
+}
+#piece6{
+    left: 120px;
+    top:130px;
+}
+#piece7{
+    left: 230px;
+    top:130px;
+}
+#piece5{
+    top:130px;
+}
+
+.red-seperate{
+    height: 10px;
+    width: 450px;
+    top: 115px;
+    position: absolute;
+    background-color: darkred ;
+}

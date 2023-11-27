@@ -1,0 +1,16 @@
+.box{
+    background-color: #1abc9c;
+    line-height:20px;
+    text-align:middle;
+    width: 150px;
+    padding: 20px;
+  }
+  #form{
+    background-color: #1abc9c;
+    height: 500px;
+    width: 300px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+  }

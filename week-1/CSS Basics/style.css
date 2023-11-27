@@ -1,0 +1,42 @@
+
+span{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border: 0.5px solid black;
+}
+#first{
+  background-color: darkcyan;
+}
+#second{
+  background-color: orange;
+}
+#container
+{
+  display: inline-block;
+  background-color: lightgray;
+  box-shadow: 5px 5px 5px ;
+}
+#container:hover{
+  background-color: pink;
+}
+
+
+button{
+  border-style: solid;
+  border-color: green;
+  background-color: greenyellow;
+
+}
+/* body{
+  background-color: #ddd;
+}
+nav{
+  background-color: rgb(51, 51, 51);
+}
+.hero-image{
+  width: 100%;
+}
+li:first-child{
+  background-color: green;
+} */
