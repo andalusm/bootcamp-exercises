@@ -1,0 +1,95 @@
+[
+    {
+        "name": "Cow",
+        "weight": "650",
+        "weight unit": "kg",
+        "habitat": "warm climate",
+        "endangered": false,
+        "delicious": 5,
+        "food": [
+            {
+                "grass": 100
+            }
+        ],
+        "Predator": [
+            "human",
+            "wolf",
+            "tiger"
+        ]
+    },
+    {
+        "name": "Elephant",
+        "weight": "4",
+        "weight unit": "ton",
+        "habitat": "africa",
+        "endangered": true,
+        "delicious": 1,
+        "food": [
+            {
+                "fruit": 30,
+                "bark": 30,
+                "grass": 40
+            }
+        ],
+        "Predator": [
+            "human",
+            "lion"
+        ]
+    },
+    {
+        "name": "Gray wolf",
+        "weight": "36",
+        "weight unit": "kg",
+        "habitat": "cold climate",
+        "endangered": true,
+        "delicious": 1,
+        "food": [
+            {
+                "moose": 30,
+                "deer": 40,
+                "boar": 30
+            }
+        ],
+        "Predator": [
+            "human",
+            "bear"
+        ]
+    },
+    {
+        "name": "Squirrel",
+        "weight": "33",
+        "weight unit": "gr",
+        "habitat": "all hibitats",
+        "endangered": false,
+        "delicious": 1,
+        "food": [
+            {
+                "nuts": 100
+            }
+        ],
+        "Predator": [
+            "human",
+            "fox",
+            "hawk"
+        ]
+    },
+    {
+        "name": "Orca",
+        "weight": "4",
+        "weight unit": "ton",
+        "habitat": "oceans",
+        "endangered": true,
+        "delicious": 1,
+        "food": [
+            {
+                "seal": 5,
+                "fish": 70,
+                "squid": 20,
+                "moose": 5
+            }
+        ],
+        "Predator": [
+            "human"
+        ]
+    }
+]
