@@ -1,6 +1,8 @@
 {
     "name": "Mashed Potatoes",
     "serves": 4,
+    "calories":250,
+    "healthy": true,
     "ingredients": [
         {
             "name": "water"
@@ -31,6 +33,7 @@
         }
     ],
     "directions": [
+        "Cut potatoes into half inch thick slices",
         "Add potatoes to a pot and cover with an inch of water.",
         "Bring the water to a boil over high heat, then reduce to a simmer and cover.",
         "Simmer for 20 minutes or until potatoes are fork tender.",
