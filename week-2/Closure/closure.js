@@ -1,29 +1,29 @@
 const foo = function () {
     const x = 1
-  
+
     const bar = function () {
       console.log(x) //notice this inner function using the outer function's variable
     }
-  
+
     return bar
-  }
-  
+}
+
   const baz = foo() //out here, x doesn't exist
   baz() //but when we invoke baz, we're printing x!
 
-  const setCounter = function (num) {
+const setCounter = function (num) {
     let counter = 0
-  
+
     const count = function () {
-      counter += num;
-      console.log(counter)
+    counter += num;
+    console.log(counter)
     }
-  
+
     return count
-  }
-  
-  const increment = setCounter(2)
-  increment()
+}
+
+const increment = setCounter(2)
+increment()
 
 //   Spot Check 1
 
@@ -150,17 +150,18 @@ bank.showBalance() //should print 950
 
 // Exercise 3
 const SongsManager  = function () {
-    let _songs  = {};
+    const _songs  = {};
+    const YOUTUBE_URL = "https://www.youtube.com/watch?v="
     
 
     const addSong  = function (song,link) {
-        _songs[song] = link.replace("https://www.youtube.com/watch?v=","")
+        _songs[song] = link.replace(YOUTUBE_URL,"")
     }
 
     const getSong  = function (song) {
         if(_songs[song])
         {
-            console.log("https://www.youtube.com/watch?v="+_songs[song])
+            console.log(YOUTUBE_URL+_songs[song])
         }
         
     }

@@ -61,16 +61,16 @@
 
 // Exercise 6
 // Create a one-line arrow function called commentOnWeather that takes one parameter, temp. It should call determineWeather and return the concatenation of "It’s " and determineWeather’s output:
-// const determineWeather = temp => {
-//     if(temp > 25){
-//       return "hot"
-//     }
-//     return "cold"
-// }
-// const commentOnWeather= temp => console.log("It\'s "+ determineWeather(temp))
+const determineWeather = temp => {
+    if(temp > 25){
+      return "hot"
+    }
+    return "cold"
+}
+const commentOnWeather= temp => console.log("It\'s "+ determineWeather(temp))
 
-// commentOnWeather(30) //returns "It's hot"
-// commentOnWeather(22) //returns "It's cold"
+commentOnWeather(30) //returns "It's hot"
+commentOnWeather(22) //returns "It's cold"
 
 
 // Exercise 7
@@ -84,18 +84,18 @@
 //   const makeSound = sound => alert(sound)
       
 //   explode(shineLight, makeSound, "BOOM")
-count = 0
-this.count = 99
+// count = 0
+// this.count = 99
 
-let x = {
-    count: 12,
-    go: () =>{
-        setTimeout(() => {
-            console.log(this.count)
-        }, 1500)
-    }
-}
-x.go()
+// let x = {
+//     count: 12,
+//     go: () =>{
+//         setTimeout(() => {
+//             console.log(this.count)
+//         }, 1500)
+//     }
+// }
+// x.go()
 
 
 
