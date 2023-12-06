@@ -22,17 +22,33 @@ class Student extends Person {
             grade: finalGrade
         })
     }
+    //method overriding!
+    addCourse(course) {
+        if (this.courses.indexOf(course) == -1) {
+            super.addCourse(course)
+        }
+    }
 }
 
 class Teacher extends Person {
-    constructor(name, startYear, salary ) {
+    constructor(name, startYear, salary) {
         super(name, startYear)
         this.grades = []
-        this.salary = salary 
+        this.salary = salary
+        this.courses = {}
     }
 
     giveGrade(student, courseName, finalGrade) {
-        student.receiveGrade(courseName,finalGrade)
+        student.receiveGrade(courseName, finalGrade)
+    }
+    addCourse(course) {
+        if (this.courses[course]) {
+            this.courses[course] = this.courses[course] + 1
+
+        }
+        else {
+            this.courses[course] = 1
+        }
     }
 }
 
@@ -44,4 +60,8 @@ const firstGrade = s1.grades[0]
 
 console.log(`${s1.name} received an ${firstGrade.grade} in ${firstGrade.course}`)
 //above should print "Ronda received an 82 in Algebra II"﻿
+t1.addCourse("Algebra II")
+t1.addCourse("Algebra II")
+t1.addCourse("Trigonometry")
+console.log(t1.courses) //should print {Algebra II: 2, Trigonometry: 1}
 
