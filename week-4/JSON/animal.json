@@ -1,14 +1,15 @@
 [
     {
         "name": "Cow",
-        "weight": "650",
+        "weight": 650,
         "weight unit": "kg",
         "habitat": "warm climate",
         "endangered": false,
         "delicious": 5,
         "food": [
             {
-                "grass": 100
+                "food":"grass",
+                "percentage" : 100
             }
         ],
         "Predator": [
@@ -19,16 +20,23 @@
     },
     {
         "name": "Elephant",
-        "weight": "4",
+        "weight": 4,
         "weight unit": "ton",
         "habitat": "africa",
         "endangered": true,
         "delicious": 1,
         "food": [
             {
-                "fruit": 30,
-                "bark": 30,
-                "grass": 40
+                "food":"grass",
+                "percentage" : 40
+            },
+            {
+                "food":"fruit",
+                "percentage" : 30
+            },
+            {
+                "food":"bark",
+                "percentage" : 30
             }
         ],
         "Predator": [
@@ -38,16 +46,23 @@
     },
     {
         "name": "Gray wolf",
-        "weight": "36",
+        "weight": 36,
         "weight unit": "kg",
         "habitat": "cold climate",
         "endangered": true,
         "delicious": 1,
         "food": [
             {
-                "moose": 30,
-                "deer": 40,
-                "boar": 30
+                "food":"moose",
+                "percentage" : 30
+            },
+            {
+                "food":"deer",
+                "percentage" : 40
+            },
+            {
+                "food":"boar",
+                "percentage" : 30
             }
         ],
         "Predator": [
@@ -57,14 +72,15 @@
     },
     {
         "name": "Squirrel",
-        "weight": "33",
+        "weight": 33,
         "weight unit": "gr",
         "habitat": "all hibitats",
         "endangered": false,
         "delicious": 1,
         "food": [
             {
-                "nuts": 100
+                "food":"nuts",
+                "percentage": 100
             }
         ],
         "Predator": [
@@ -75,17 +91,23 @@
     },
     {
         "name": "Orca",
-        "weight": "4",
+        "weight": 4,
         "weight unit": "ton",
         "habitat": "oceans",
         "endangered": true,
         "delicious": 1,
         "food": [
             {
-                "seal": 5,
-                "fish": 70,
-                "squid": 20,
-                "moose": 5
+                "food":"squid",
+                "percentage": 20
+            },
+            {
+                "food":"fish",
+                "percentage": 70
+            },
+            {
+                "food":"seal",
+                "percentage": 10
             }
         ],
         "Predator": [
