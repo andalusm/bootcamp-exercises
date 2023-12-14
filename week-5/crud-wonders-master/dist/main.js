@@ -29,6 +29,7 @@ const addWonder = function () {
 //     success: function () { }
 // })
 
+
 $("#wonders").on("click", ".visit", function () {
     let wonder = $(this).closest(".wonder").find(".name").text()
     //PUT this to the server: update the wonder's `visited` status to `true`
