@@ -19,20 +19,49 @@ const usersModule = function () {
         if (doesExist) {
             throw new errors.DuplicatedResourceError()
         }
+        if(!newUser.name || !newUser.username || !newUser.country || !newUser.age || typeof(newUser.age) != "number"){
+            throw new errors.MissingDataError()
+        }
         users.push(newUser)
+    }
+
+    const getUser = function(userName){
+        let user = users.find(w => w.username === userName)
+        if (user) {
+            return user
+        }
+        else{
+            throw new errors.NotUserError()
+        }
+        
+        
     }
 
 
 
-    const deleteUser = function (username) { }
+    const deleteUser = function (username) { 
+        let userIndex = users.findIndex(user => user.username === username)
 
-    const getAll = function () { }
+    if (userIndex === -1) {
+        throw new errors.NotUserError()
+        
+    } else {
+        users.splice(userIndex, 1)
+        
+    }
+
+    }
+
+    const getAll = function () { 
+        return users;
+    }
 
     return {
         add: addUser,
         delete: deleteUser,
-        getAll: getAll
+        getAll: getAll,
+        get : getUser
     }
 }
 
-module.exports = {users:usersModule}
+module.exports = {usersModule}
