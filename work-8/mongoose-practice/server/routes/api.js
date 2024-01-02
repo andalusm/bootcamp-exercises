@@ -13,7 +13,7 @@ router.post('/person', function (req, res) {
     const p = req.body
     const p1 = Person({firstName: p.firstName, lastName:p.lastName, age: p.age})
     p1.save()
-    res.send("Saved")
+    res.send(p1)
 })
 router.put('/person/:id', function (req, res) {
     const id = req.params.id
